@@ -1,0 +1,26 @@
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    <h5 class="my-0 mr-md-auto font-weight-normal">NG-FRONT</h5>
+    <app-menu [auth]="1"></app-menu>
+</div>
+
+<main role="main">
+    <div class="container">
+        <div *ngIf="user">
+            <h2>User Details</h2>
+            <p>This is selected user details.</p>
+            <ul class="list-group mb-4">
+                <li class="list-group-item">#{{user.id}}</li>
+                <li class="list-group-item"><img [src]="user.profile_image || 'https://via.placeholder.com//50x50'"
+                                                 width="50px" height="50px"></li>
+                <li class="list-group-item">{{user.email}}</li>
+                <li class="list-group-item">{{user.name}}</li>
+                <li class="list-group-item">{{user.last_name}}</li>
+                <li class="list-group-item">{{user.registered_at}}</li>
+            </ul>
+        </div>
+        <button (click)="goBack()" class="btn btn-default mr-3">Go back</button>
+        <button *ngIf="user" class="btn btn-danger" (click)="likeUser(user)" [disabled]="user.liked"><i
+                class="fa fa-heart mr-2"></i><span [innerHTML]="user.liked ? 'You Liked It!' : 'Like'"></span>
+        </button>
+    </div>
+</main>
