@@ -38,10 +38,10 @@ export class AuthenticationService implements AuthService {
                 }),
                 tap(this.saveAccessData.bind(this)),
                 catchError((err) => {
-                        this.logout();
-                        return throwError(err);
-                    })
-                );
+                    this.logout();
+                    return throwError(err);
+                })
+            );
     }
 
     public refreshShouldHappen(response: HttpErrorResponse): boolean {

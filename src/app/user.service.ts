@@ -24,11 +24,11 @@ export class UserService {
         return this.http.get<User>(url).pipe(
             map(user => {
                 if (user.likes && user.likes.length) {
-                    if(currentUserInfo && currentUserInfo.id){
+                    if (currentUserInfo && currentUserInfo.id) {
                         let likedByCurrentUser = user.likes.filter((item) => {
                             return item.user_id === currentUserInfo.id;
                         });
-                        if(likedByCurrentUser.length){
+                        if (likedByCurrentUser.length) {
                             user['liked'] = true;
                         }
                     }

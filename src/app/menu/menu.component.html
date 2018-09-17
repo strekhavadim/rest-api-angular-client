@@ -1,12 +1,12 @@
 <nav>
-  <nav class="my-2 my-md-0 mr-md-3" *ngIf="auth">
-    <a class="p-2 text-dark mr-2" routerLink="/home">Home</a>
-    <a class="p-2 text-dark mr-2" routerLink="/profile">Profile</a>
-    <a class="p-2 text-dark mr-2" routerLink="/users">Users</a>
-    <a class="btn btn-outline-primary" routerLink="/logout">Logout</a>
-  </nav>
-  <nav class="my-2 my-md-0 mr-md-3" *ngIf="!auth">
-    <a class="btn btn-outline-primary mr-2" routerLink="/login">Sign in</a>
-    <a class="btn btn-outline-primary" routerLink="/register">Sign Up</a>
-  </nav>
+    <nav class="my-2 my-md-0 mr-md-3" *ngIf="auth">
+        <a class="p-2 text-dark mr-2" routerLink="/home">Home</a>
+        <a class="p-2 text-dark mr-2" routerLink="/profile">Profile</a>
+        <a class="p-2 text-dark mr-2" routerLink="/users">Users</a>
+        <a class="btn btn-outline-primary" routerLink="/logout">Logout</a>
+    </nav>
+    <nav class="my-2 my-md-0 mr-md-3" *ngIf="!auth">
+        <a class="btn btn-outline-primary mr-2" routerLink="/login">Sign in</a>
+        <a class="btn btn-outline-primary" routerLink="/register">Sign Up</a>
+    </nav>
 </nav>

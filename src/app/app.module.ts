@@ -10,10 +10,10 @@ import {RegisterComponent} from './register/register.component';
 import {HttpClientModule} from '@angular/common/http';
 import {AuthenticationModule} from './auth.module';
 import {LogoutComponent} from './logout/logout.component';
-import { UsersComponent } from './users/users.component';
-import { UserComponent } from './users/user/user.component';
-import { MenuComponent } from './menu/menu.component';
-import { ProfileComponent } from './profile/profile.component';
+import {UsersComponent} from './users/users.component';
+import {UserComponent} from './users/user/user.component';
+import {MenuComponent} from './menu/menu.component';
+import {ProfileComponent} from './profile/profile.component';
 
 @NgModule({
     declarations: [

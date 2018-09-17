@@ -5,7 +5,8 @@ import {Injectable} from '@angular/core';
 })
 export class FormValidationService {
 
-    constructor() { }
+    constructor() {
+    }
 
     getErrors(errors) {
         let errorMessages = [];
