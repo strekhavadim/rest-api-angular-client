@@ -4,11 +4,8 @@
 
 export const environment = {
     production: false,
-    // apiUrl: 'http://angular-passport.local/',
-    apiUrl: 'http://restapi.local/',
-    // clientSecret: 'vis50lMokME27xMCPdCLAmeHhwb7hTCZeEqb3eSo',
+    apiUrl: 'http://localhost:8000/',
     clientSecret: '7jAIzfhw0oRBdtkS7M7ickyUqlsBd0SceaQ9C4Gc',
-    // clientId: 2,
     clientId: 3,
     grantType: 'password',
 };
